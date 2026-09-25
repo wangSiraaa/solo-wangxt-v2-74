@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+networkx
+sqlalchemy>=2
+psycopg2-binary
+httpx
