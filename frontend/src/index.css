@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  background: #f5f7f4;
+  color: #2c3e2d;
+}
+.app { max-width: 1080px; margin: 0 auto; padding: 16px 24px 48px; }
+h1 { font-size: 22px; }
+.badge {
+  font-size: 12px; background: #e8f0e4; color: #4a7a4f;
+  border-radius: 10px; padding: 2px 10px; vertical-align: middle;
+}
+nav { display: flex; gap: 8px; margin: 12px 0 20px; }
+nav button {
+  border: 1px solid #c8d6c5; background: #fff; border-radius: 6px;
+  padding: 6px 16px; cursor: pointer; font-size: 14px;
+}
+nav button.active { background: #4a7a4f; color: #fff; border-color: #4a7a4f; }
+nav button:disabled { opacity: 0.4; cursor: default; }
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th, td { border: 1px solid #dde5da; padding: 6px 10px; text-align: left; font-size: 14px; }
+th { background: #eef3ea; }
+tr.clickable { cursor: pointer; }
+tr.clickable:hover { background: #f0f6ee; }
+.card {
+  background: #fff; border: 1px solid #dde5da; border-radius: 8px;
+  padding: 12px 16px; margin: 12px 0;
+}
+.card h4 { margin: 0 0 8px; }
+.tag {
+  border: 1px solid #b9cfb4; background: #f2f8ef; border-radius: 6px;
+  padding: 3px 8px; margin: 0 6px 4px 0; cursor: pointer; font-size: 13px;
+}
+.tag .gen { color: #7a9a72; margin-left: 4px; font-size: 12px; }
+.unknown { color: #999; font-style: italic; }
+.muted { color: #7d8a7c; font-size: 13px; }
+.error { color: #b03a2e; }
+.ok { color: #2e7d32; }
+.status-missing { color: #b03a2e; }
+.status-dead { color: #6d4c41; text-decoration: line-through; }
+.form-row {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin: 8px 0; font-size: 14px;
+}
+input, select {
+  padding: 5px 8px; border: 1px solid #c8d6c5; border-radius: 5px; font-size: 14px;
+}
+button[type="submit"] {
+  background: #4a7a4f; color: #fff; border: none; border-radius: 5px;
+  padding: 6px 14px; cursor: pointer;
+}
+.mean { font-size: 28px; font-weight: 600; margin: 4px 0; color: #2e5d33; }
